@@ -1,0 +1,55 @@
+/* google font-----poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+/* =============
+    header
+============= */
+body{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+    color: #3A3A3A;
+}
+header{
+    margin: 10px 100px;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+nav>ul{
+    display: flex;
+    align-items: center;
+}
+nav>ul>li{
+    list-style: none;
+    padding-left: 30px;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    padding: 0px 20px;
+    color: #3A3A3A;
+}
+/* First part-influencer section */
+.influencer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 130px;
+    margin: 120px 100px;
+}
+.influencer-intro a{
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 8px 20px;
+    color: white;
+    background-color: #E02C6D;
+}
+.fa-arrow-right{
+    padding-left: 10px;
+}
+.camera img{
+    /* border-radius: 50%; */
+    height: 440px;
+    width: 414px;
+}
