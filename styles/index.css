@@ -141,9 +141,16 @@ footer .fab{
 /* responsive */
 
 
-@media (max-width:950px){
-    .influencer-intro p,h1,a{
-        font-size: 0.8em;
+@media (max-width:1024px){
+    body p,h1,h2,h3{
+        font-size: 1em;
+    }
+    .influencer{
+        grid-column-gap: 50px;
+    }
+
+    .influencer-intro a{
+        padding: 4px 10px;
     }
     .camera img{
         border-radius: 50%;
@@ -165,7 +172,7 @@ footer .fab{
         width: 300px;
         border-radius: 10px;
     }
-    .akash-details {
+    /* .akash-details {
         font-size: 12px;
-    }
+    } */
 }
