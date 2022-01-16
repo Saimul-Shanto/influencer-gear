@@ -84,11 +84,11 @@ hr{
 .popular-collection h2{
     text-align: center;
 }
-.see-more{
+.popular-collection> .see-more{
     margin-top: 30px;
     text-align: end;
 }
-.see-more a{
+.popular-collection> .see-more a{
     text-decoration: none;
     color: #E02C6D;
 }
@@ -108,7 +108,7 @@ hr{
     width: 300px;
     
 }
-.price{
+.popular-collection>.collections>.collection> .price{
     font-size: 20px;
 }
 .collection img{
