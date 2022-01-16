@@ -84,17 +84,32 @@ hr{
 .popular-collection h2{
     text-align: center;
 }
+.see-more{
+    margin-top: 30px;
+    text-align: end;
+}
+.see-more a{
+    text-decoration: none;
+    color: #E02C6D;
+}
 .collections{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    justify-content: center;
+    justify-items: center;
 }
 .collection{
     /* border: 1px solid; */
     box-shadow: 0 0 5px 5px whitesmoke;
     padding: 16px;
+    height: 495px;
+    width: 300px;
     
+}
+.price{
+    font-size: 20px;
 }
 .collection img{
     height: 256px;
@@ -138,7 +153,9 @@ footer .fab{
 }
 
 
-/* responsive */
+/* ====================
+responsive tablet
+======================*/
 
 
 @media (max-width:1024px){
@@ -163,6 +180,7 @@ footer .fab{
     }
     .collections{
         grid-template-columns: 1fr 1fr;
+        justify-content: center;
     }
     .photographer{
         margin: 50px 50px;
@@ -175,4 +193,79 @@ footer .fab{
     /* .akash-details {
         font-size: 12px;
     } */
+}
+/*=====================
+    mobile responsive
+ ======================= */
+@media (max-width:576px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav>ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    nav>ul>li{
+        padding-left: 0px;
+    }
+    .influencer{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 0px;
+        margin: 20px ;
+        justify-items: center;
+    }
+    .influencer-intro{
+        text-align: center;
+    }
+    .camera img{
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+    }
+    /* Brand-logo */
+
+    .brand-logo{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-row-gap: 10px;
+        grid-column-gap: 5px;
+        align-items: center;
+        justify-items: center;
+    }
+    .brand-logo img{
+        width: 51px;
+        height: 16px;
+    }
+    /* popular section */
+    .popular-collection{
+        margin: 30px 20px;
+        margin-top: 100px;
+    }
+    .collections{
+        grid-template-columns: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 10px;
+        justify-items: center;
+    }
+    .collection{
+        height: 476px;
+        width: 300px;
+    }
+    .photographer{
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+        grid-row-gap: 10px;
+    }
+    .influencer-akash img{
+        height: 188px;
+        width: 300px;
+        border-radius: 10px;
+    }
+    .akash-details {
+        text-align: center;
+    }
 }
